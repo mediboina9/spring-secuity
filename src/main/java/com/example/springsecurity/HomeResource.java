@@ -15,6 +15,11 @@ public class HomeResource {
     }
     @GetMapping("/prop")
     public String getProp(){
-        return "<h1>This is from properties file</h1>";
+        return "<h1>This is from user role access/h1>";
+    }
+
+    @GetMapping("/admin")
+    public String getadmin(){
+        return "<h1>This is from admin role access</h1>";
     }
 }
